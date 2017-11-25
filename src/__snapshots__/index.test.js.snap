@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders alternative class name without issue 1`] = `
+<span
+  className="SOMETHING"
+>
+  <span
+    className="chinese"
+  >
+    圓周率是
+  </span>
+  <span
+    className="number"
+  >
+    3.1415926
+  </span>
+</span>
+`;
+
+exports[`Renders ascii only text without crashing 1`] = `
+<span
+  className="char-split-wrapper"
+>
+  <span
+    className="ascii"
+  >
+    ASCII
+  </span>
+</span>
+`;
+
+exports[`Renders empty text without crashing 1`] = `<span />`;
+
+exports[`Renders some Mixed Text without crashing 1`] = `
+<span
+  className="char-split-wrapper"
+>
+  <span
+    className="non-ascii"
+  >
+    圓周率是
+  </span>
+  <span
+    className="ascii"
+  >
+    3.1415926
+  </span>
+</span>
+`;

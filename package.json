@@ -1,0 +1,22 @@
+{
+  "name": "react-ascii-char-split",
+  "version": "1.0.0",
+  "private": false,
+  "devDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.17",
+    "react-test-renderer": "^16.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=15.5.0",
+    "react-dom": ">=15.5.0"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
