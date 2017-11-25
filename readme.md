@@ -1,4 +1,7 @@
 # React-ascii-char-split
+[![CircleCI](https://circleci.com/gh/yshing/react-ascii-char-split.svg?style=svg)](https://circleci.com/gh/yshing/react-ascii-char-split)
+[![codecov](https://codecov.io/gh/yshing/react-ascii-char-split/branch/master/graph/badge.svg)](https://codecov.io/gh/yshing/react-ascii-char-split)
+
 React Component for separately rendering ASCII and non-ASCII String.
 
 ## Example:
