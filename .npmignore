@@ -1,3 +1,8 @@
 *.test.js
 *.test.js.snap
 coverage/
+.vscode
+.circleci
+.gitignore
+.babelrc
+prettier.config.js
