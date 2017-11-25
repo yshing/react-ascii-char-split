@@ -3,14 +3,17 @@
 exports[`Renders alternative class name without issue 1`] = `
 <span
   className="SOMETHING"
+  style={undefined}
 >
   <span
     className="chinese"
+    style={undefined}
   >
     圓周率是
   </span>
   <span
     className="number"
+    style={undefined}
   >
     3.1415926
   </span>
@@ -20,6 +23,7 @@ exports[`Renders alternative class name without issue 1`] = `
 exports[`Renders ascii only text without crashing 1`] = `
 <span
   className="char-split-wrapper"
+  style={undefined}
 >
   <span
     className="ascii"
@@ -34,14 +38,17 @@ exports[`Renders empty text without crashing 1`] = `<span />`;
 exports[`Renders some Mixed Text without crashing 1`] = `
 <span
   className="char-split-wrapper"
+  style={undefined}
 >
   <span
     className="non-ascii"
+    style={undefined}
   >
     圓周率是
   </span>
   <span
     className="ascii"
+    style={undefined}
   >
     3.1415926
   </span>

@@ -2,6 +2,8 @@
   "name": "react-ascii-char-split",
   "version": "1.0.0",
   "private": false,
+  "author": "Y.Shing (https://www.yshing.hk/)",
+  "license": "MIT",
   "devDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -18,5 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yshing/react-ascii-char-split.git"
   }
 }
