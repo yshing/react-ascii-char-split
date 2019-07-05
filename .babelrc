@@ -1,72 +1,78 @@
 {
-    "env": {
-      "commonjs": {
-        "plugins": [
-        ],
-        "presets": [
-          "es2015",
-          "react"
+  "env": {
+    "commonjs": {
+      "plugins": [],
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+      ]
+    },
+    "development": {
+      "plugins": [
+        [
+          "react-transform",
+          {
+            "transforms": [
+              {
+                "transform": "react-transform-hmr",
+                "imports": [
+                  "react"
+                ],
+                "locals": [
+                  "module"
+                ]
+              },
+              {
+                "transform": "react-transform-catch-errors",
+                "imports": [
+                  "react",
+                  "redbox-react"
+                ]
+              }
+            ]
+          }
         ]
-      },
-      "development": {
-        "plugins": [
-          [
-            "react-transform",
-            {
-              "transforms": [
-                {
-                  "transform": "react-transform-hmr",
-                  "imports": [
-                    "react"
-                  ],
-                  "locals": [
-                    "module"
-                  ]
-                },
-                {
-                  "transform": "react-transform-catch-errors",
-                  "imports": [
-                    "react",
-                    "redbox-react"
-                  ]
-                }
-              ]
-            }
-          ]
-        ],
-        "presets": [
-          "es2015",
-          "react"
+      ],
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+      ]
+    },
+    "es": {
+      "plugins": [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "corejs": 2
+          }
         ]
-      },
-      "es": {
-        "plugins": [
-          "transform-runtime"
-        ],
-        "presets": [
-          "es2015-rollup",
-          "react"
-
+      ],
+      "presets": [
+        "es2015-rollup",
+        "@babel/preset-react"
+      ]
+    },
+    "production": {
+      "comments": false,
+      "plugins": [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "corejs": 2
+          }
         ]
-      },
-      "production": {
-        "comments": false,
-        "plugins": [
-          "transform-runtime"
-        ],
-        "presets": [
-          "es2015",
-          "react"
-
-        ]
-      },
-      "test": {
-        "comments": false,
-        "presets": [
-          "es2015",
-          "react"
-        ]
-      }
+      ],
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+      ]
+    },
+    "test": {
+      "comments": false,
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+      ]
     }
   }
-  
+}
